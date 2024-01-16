@@ -28,9 +28,9 @@ class Model {
         }
     }
 
-    kovetkezoElem() {
-        console.log("mondat " + this.#aktElem);
+    kovetkezoElem() {        
         this.#aktElem += 1;
+        //console.log("mondat " + this.#aktElem);
         return this.#aktElem;
     }
 

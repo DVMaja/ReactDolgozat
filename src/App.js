@@ -15,6 +15,9 @@ function App() {
   const [aktualisElem, setAktElem] = useState(2);
   const mondatSzavai = model.aktMOndatOsszerak(aktualisElem);
   const joValasz = model.aktJoValasz(aktualisElem);
+  //const alapV = model.
+  console.log(joValasz);
+  //const pontok = model.pontok();
 
 
   function tovabb() {
@@ -35,8 +38,9 @@ function App() {
       </header>
       <article>
         <Cim cim={model.cim} />
-        <Pont pont={5} />
-        <MondatKieg mondatLista={mondatSzavai} valasz={joValasz} tovabb={tovabb} />
+        <h2>Pontok</h2>
+        <Pont pont={3_4} />
+        <MondatKieg mondatLista={mondatSzavai} alapSzo={"ez van"} valasz={joValasz} tovabb={tovabb} />
 
 
         <button onClick={tovabb}>Következő</button>
